@@ -3,7 +3,7 @@ using Ninject.Modules;
 
 namespace HelloWorld_CroweHorwath
 {
-    public class Resolver : NinjectModule
+    public class ConsuleAppResolver : NinjectModule
     {
         public override void Load()
         {

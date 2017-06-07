@@ -29,10 +29,10 @@ namespace HelloWorld_CroweHorwath
         static void Main(string[] args)
         {
             var kernel = new StandardKernel();
-            kernel.Load(Assembly.GetExecutingAssembly());
+            kernel.Load<ConsuleAppResolver>();
             var writer = kernel.Get<Writer>();
 
-            writer.Write("HelloWorld");
+            writer.Write("Hello World!");
 
             Console.ReadLine();
         }

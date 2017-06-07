@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apps\ConsoleApp.cs" />
-    <Compile Include="Core\Resolver.cs" />
+    <Compile Include="Core\ConsuleAppResolver.cs" />
     <Compile Include="Interfaces\IWriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
