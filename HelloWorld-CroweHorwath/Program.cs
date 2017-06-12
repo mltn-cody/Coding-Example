@@ -1,4 +1,5 @@
-﻿using Ninject;
+﻿using HelloWorld_CroweHorwath.Creator;
+using Ninject;
 using System;
 using System.Reflection;
 
@@ -29,8 +30,9 @@ namespace HelloWorld_CroweHorwath
         static void Main(string[] args)
         {
             var kernel = new StandardKernel();
-            kernel.Load<ConsuleAppResolver>();
-            var writer = kernel.Get<Writer>();
+            kernel.Load<CreationResolver>();
+            var creator = kernel.Get<AppCreator>();
+            var writer = creator.CreateWriter();
 
             writer.Write("Hello World!");
 
