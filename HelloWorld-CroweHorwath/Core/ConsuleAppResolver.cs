@@ -7,8 +7,8 @@ namespace HelloWorld_CroweHorwath
     {
         public override void Load()
         {
-            Kernel.Bind<IWriter>().To<ConsoleWriter>();
-            Kernel.Bind<Writer>().To<ConsoleApp>();
+            Kernel.Rebind<IWriter>().To<ConsoleWriter>();
+            Kernel.Rebind<Writer>().To<ConsoleApp>();
         }
     }
 }

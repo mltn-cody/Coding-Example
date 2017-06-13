@@ -29,7 +29,7 @@ namespace HelloWorld_CroweHorwath
     {
         static void Main(string[] args)
         {
-            var kernel = new StandardKernel();
+            var kernel =  KernalEngine.Instance.GetKernal;
             kernel.Load<CreationResolver>();
             var creator = kernel.Get<AppCreator>();
             var writer = creator.CreateWriter();

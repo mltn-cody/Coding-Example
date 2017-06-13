@@ -7,7 +7,7 @@ namespace HelloWorld_CroweHorwath
     {
         public override void Load()
         {
-            Kernel.Bind<AppCreator>().To<ConfigurationAppCreater>();
+            Kernel.Rebind<AppCreator>().To<ConfigurationAppCreater>();
         }
     }
 }

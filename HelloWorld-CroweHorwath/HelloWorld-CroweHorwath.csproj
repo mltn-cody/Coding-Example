@@ -52,6 +52,7 @@
     <Compile Include="Apps\ConsoleApp.cs" />
     <Compile Include="Core\ConsuleAppResolver.cs" />
     <Compile Include="Core\CreationResolver.cs" />
+    <Compile Include="Core\KernelEngine.cs" />
     <Compile Include="Creator\AppCreator.cs" />
     <Compile Include="Creator\ConfigurationAppCreater.cs" />
     <Compile Include="Interfaces\IWriter.cs" />

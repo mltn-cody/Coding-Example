@@ -11,7 +11,7 @@ namespace HelloWorld_CroweHorwath.Creator
             var selection = ConfigurationManager.AppSettings["UseWriter"];
             switch (selection) {
                 case "Console":
-                    var kernel = new StandardKernel();
+                    var kernel = KernalEngine.Instance.GetKernal;
                     kernel.Load<ConsuleAppResolver>();
                     var writer = kernel.Get<Writer>();
                     return writer;
