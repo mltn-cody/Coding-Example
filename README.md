@@ -1,1 +1,1 @@
-Another assignement, simple console up showing singleton, strategy, and Dependency Injection principles. 
+Another assignement, simple console app showing singleton, strategy, and Dependency Injection principles. 
